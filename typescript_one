@@ -1,0 +1,400 @@
+Script started on Sun 20 Feb 2011 02:19:00 PM CST
+]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ [K]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ [K]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ [K]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ [K]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ [K]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ [K]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ rails console
+Loading development environment (Rails 3.0.3)
+ruby-1.8.7-p302 > 17 + 42
+ => 59 
+ruby-1.8.7-p302 > ""
+ => "" 
+ruby-1.8.7-p302 > foo
+NameError: undefined local variable or method `foo' for #<Object:0xb777795c>
+	from (irb):3
+ruby-1.8.7-p302 > "foo"
+ => "foo" 
+ruby-1.8.7-p302 > "foo" + "bar"
+ => "foobar" 
+ruby-1.8.7-p302 > first_name = "Dana"
+ => "Dana" 
+ruby-1.8.7-p302 > last_name = "Tassler
+ruby-1.8.7-p302"> last_name = "Tassler"
+ruby-1.8.7-p302"> "
+SyntaxError: compile error
+(irb):8: syntax error, unexpected tCONSTANT, expecting $end
+last_name = "Tassler"
+                    ^
+	from (irb):8
+ruby-1.8.7-p302 > last_name = "Tassler"
+ => "Tassler" 
+ruby-1.8.7-p302 > "#{first_name} +[K#{last_name}"
+ => "Dana Tassler" 
+ruby-1.8.7-p302 > puts "foo"
+foo
+ => nil 
+ruby-1.8.7-p302 > print "foo"
+foo => nil 
+ruby-1.8.7-p302 > print "foo\n"
+foo
+ => nil 
+ruby-1.8.7-p302 > 'foo'
+ => "foo" 
+ruby-1.8.7-p302 > 'foo' +[K+ 'bar'
+ => "foobar" 
+ruby-1.8.7-p302 > '#{foo} bar'
+ => "\#{foo} bar" 
+ruby-1.8.7-p302 > '\n'
+ => "\\n" 
+ruby-1.8.7-p302 > 'Newlines (\n) and tabs (\t) both use the backslash character \.'
+ => "Newlines (\\n) and tabs (\\t) both use the backslash character \\." 
+ruby-1.8.7-p302 > "foobar".length
+ => 6 
+ruby-1.8.7-p302 > "foobar".lent[K[K[K[K[K.empty?
+ => false 
+ruby-1.8.7-p302 > "".empty?
+ => true 
+ruby-1.8.7-p302 > s = "foobar"
+ => "foobar" 
+ruby-1.8.7-p302 > if s.empty?
+ruby-1.8.7-p302 ?>  "The string is empty"
+ruby-1.8.7-p302 ?>  else
+ruby-1.8.7-p302 >     "The string is nonempty"
+ruby-1.8.7-p302 ?>  end
+ => "The string is nonempty" 
+ruby-1.8.7-p302 > x = "foo"
+ => "foo" 
+ruby-1.8.7-p302 > y = ""
+ => "" 
+ruby-1.8.7-p302 > puts "Both strings are empty" if x.empty? && y.empty?
+ => nil 
+ruby-1.8.7-p302 > puts "One of the strings is empty" if x.empty? || y.empty?
+One of the strings is empty
+ => nil 
+ruby-1.8.7-p302 > puts "x is not empty" if !x.empty?
+x is not empty
+ => nil 
+ruby-1.8.7-p302 > not.to_s
+SyntaxError: compile error
+(irb):34: syntax error, unexpected '.'
+not.to_s
+    ^
+	from (irb):34
+ruby-1.8.7-p302 > nil.tos+[K[K_s
+ => "" 
+ruby-1.8.7-p302 > nio[Kl.tmpe[K[K[K[Kempty?
+NoMethodError: You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?
+	from (irb):36
+ruby-1.8.7-p302 > "".nil?
+ => false 
+ruby-1.8.7-p302 > nil.nil?
+ => true 
+ruby-1.8.7-p302 > to[Kitle
+NameError: undefined local variable or method `title' for #<Object:0xb777795c>
+	from (irb):39
+ruby-1.8.7-p302 > @title
+ => nil 
+ruby-1.8.7-p302 > puts "There is no such instance variable"[K." if @title.nil?
+There is no such instance variable.
+ => nil 
+ruby-1.8.7-p302 > "#{@title}"
+ => "" 
+ruby-1.8.7-p302 > [Kruby-1.8.7-p302 > [Kruby-1.8.7-p302 > string = "foobar"
+ => "foobar" 
+ruby-1.8.7-p302 > puts "The string '#{string}' is nonempty." unless string.empty?
+The string 'foobar' is nonempty.
+ => nil 
+ruby-1.8.7-p302 > if nil
+ruby-1.8.7-p302 ?>  true
+ruby-1.8.7-p302 ?>  else
+ruby-1.8.7-p302 >     end
+ => nil 
+ruby-1.8.7-p302 > if nill[K
+ruby-1.8.7-p302 ?>  true
+ruby-1.8.7-p302 ?>  else
+ruby-1.8.7-p302 >     false
+ruby-1.8.7-p302 ?>  end
+ => false 
+ruby-1.8.7-p302 > if 0 
+ruby-1.8.7-p302 ?>  true
+ruby-1.8.7-p302 ?>  else
+ruby-1.8.7-p302 >     false
+ruby-1.8.7-p302 ?>  end
+ => true 
+ruby-1.8.7-p302 > def string_messs[Kage(string)
+ruby-1.8.7-p302 ?>  if string.empty?
+ruby-1.8.7-p302 ?>    "It's s[Kan an[K[Kempty t[Kstring!"
+ruby-1.8.7-p302 ?>    else
+ruby-1.8.7-p302 >       "The string is nonempty"[K."
+ruby-1.8.7-p302 ?>    end
+ruby-1.8.7-p302 ?>  end
+ => nil 
+ruby-1.8.7-p302 > puts([K string([K_ms[Kessage("")
+It's an empty string!
+ => nil 
+ruby-1.8.7-p302 > puts string_message("footb[K[Kbar")
+The string is nonempty.
+ => nil 
+ruby-1.8.7-p302 > f[Kd3e[K[Kef string_ms[Kessage(string)
+ruby-1.8.7-p302 ?>  return "It's an empty string"[K!" if string.empty?
+ruby-1.8.7-p302 ?>  return "The string is nonempty."
+ruby-1.8.7-p302 ?>  end
+ => nil 
+ruby-1.8.7-p302 > string_message("")
+ => "It's an empty string!" 
+ruby-1.8.7-p302 > string_message("foobar")
+ => "The string is nonempty." 
+ruby-1.8.7-p302 > [Kruby-1.8.7-p302 > [Kruby-1.8.7-p302 > "foo bar    baz".split
+ => ["foo", "bar", "baz"] 
+ruby-1.8.7-p302 > "[K"fooxbarxbaz.spli[K[K[K[K[K[Kz".split('x"[K')
+ => ["foo", "bar", "baz"] 
+ruby-1.8.7-p302 > 1 = [K[K[K[Ka [K =[K= [42, 8, 17]
+ => [42, 8, 17] 
+ruby-1.8.7-p302 > a[0]
+ => 42 
+ruby-1.8.7-p302 > a[1]
+ => 8 
+ruby-1.8.7-p302 > a[2]
+ => 17 
+ruby-1.8.7-p302 > a-[K[-1]
+ => 17 
+ruby-1.8.7-p302 > a
+ => [42, 8, 17] 
+ruby-1.8.7-p302 > a.first
+ => 42 
+ruby-1.8.7-p302 > a.second
+ => 8 
+ruby-1.8.7-p302 > a.last
+ => 17 
+ruby-1.8.7-p302 > a.last == a[-1]
+ => true 
+ruby-1.8.7-p302 > x = a.lent[Kgth
+ => 3 
+ruby-1.8.7-p302 > s[Kx == 3
+ => true 
+ruby-1.8.7-p302 > x == 1
+ => false 
+ruby-1.8.7-p302 > x != 1
+ => true 
+ruby-1.8.7-p302 > x [K >= 1
+ => true 
+ruby-1.8.7-p302 > x < 1
+ => false 
+ruby-1.8.7-p302 > a.sort
+ => [8, 17, 42] 
+ruby-1.8.7-p302 > a.reverse
+ => [17, 8, 42] 
+ruby-1.8.7-p302 > a.shuffle
+ => [8, 17, 42] 
+ruby-1.8.7-p302 > a << 7
+ => [42, 8, 17, 7] 
+ruby-1.8.7-p302 > a << "foo" << "bar"
+ => [42, 8, 17, 7, "foo", "bar"] 
+ruby-1.8.7-p302 > a
+ => [42, 8, 17, 7, "foo", "bar"] 
+ruby-1.8.7-p302 > a.join
+ => "428177foobar" 
+ruby-1.8.7-p302 > a.join(', ')
+ => "42, 8, 17, 7, foo, bar" 
+ruby-1.8.7-p302 > 0..9
+ => 0..9 
+ruby-1.8.7-p302 > 0..9.to_a
+(irb):101: warning: default `to_a' will be obsolete
+ArgumentError: bad value for range
+	from (irb):101
+ruby-1.8.7-p302 > (0..9).to_a
+ => [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] 
+ruby-1.8.7-p302 > a = %s[Kw[foo bar baz quux]
+ => ["foo", "bar", "baz", "quux"] 
+ruby-1.8.7-p302 > a[0..2]
+ => ["foo", "bar", "baz"] 
+ruby-1.8.7-p302 > ('a'..'e').toa[K_a
+ => ["a", "b", "c", "d", "e"] 
+ruby-1.8.7-p302 > (1..5).each { |i| puts 2 * i }
+2
+4
+6
+8
+10
+ => 1..5 
+ruby-1.8.7-p302 > (1..5).each do |i|
+ruby-1.8.7-p302 >     puts 2 * i
+ruby-1.8.7-p302 ?>  end
+2
+4
+6
+8
+10
+ => 1..5 
+ruby-1.8.7-p302 > (1..5).each do |number|
+ruby-1.8.7-p302 >     puts 2 * number
+ruby-1.8.7-p302 ?>  puts '--'
+ruby-1.8.7-p302 ?>  end
+2
+--
+4
+--
+6
+--
+8
+--
+10
+--
+ => 1..5 
+ruby-1.8.7-p302 > 2.times { puts "Bee[Ktelgeuse!" }
+Betelgeuse!
+Betelgeuse!
+ => 2 
+ruby-1.8.7-p302 > 2.times { puts "Betelgeuse!" }[1P[1@3
+Betelgeuse!
+Betelgeuse!
+Betelgeuse!
+ => 3 
+ruby-1.8.7-p302 > (1..5).mpa[K[Kap { |i| i**2 }
+ => [1, 4, 9, 16, 25] 
+ruby-1.8.7-p302 > %w[a b c]
+ => ["a", "b", "c"] 
+ruby-1.8.7-p302 > %w[a b c].map { |char| char.upd[Kcase }
+ => ["A", "B", "C"] 
+ruby-1.8.7-p302 > ('a'..z[K'z').to_a
+ => ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"] 
+ruby-1.8.7-p302 > ('a'..'z').to_a.shuffle
+ => ["i", "p", "v", "a", "r", "y", "z", "m", "j", "e", "d", "t", "k", "l", "s", "w", "g", "x", "n", "c", "o", "q", "f", "b", "h", "u"] 
+ruby-1.8.7-p302 > ('a'..'z').to_a.shuffle[0..7]
+ => ["h", "j", "e", "b", "p", "u", "z", "f"] 
+ruby-1.8.7-p302 > ('a'..'z').to_a.shuffle[0..7].join
+ => "avltwhiq" 
+ruby-1.8.7-p302 > ('a'..'z').to_a.shuffle[0..7].join
+ => "duicjnxk" 
+ruby-1.8.7-p302 > ('a'..'z').to_a.shuffle[0..7].join
+ => "caxlvemg" 
+ruby-1.8.7-p302 > user = {}
+ => {} 
+ruby-1.8.7-p302 > user[fi[K[K"first_name}[K
+ruby-1.8.7-p302"> "}[K] = "Dana"
+ => "Dana" 
+ruby-1.8.7-p302 > "] = "Dana"[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[Kuser["last_name"] = "Tassler"
+ => "Tassler" 
+ruby-1.8.7-p302 > user["first_name"]
+ => nil 
+ruby-1.8.7-p302 > user["fist[K[Krst_name"] = "Dana"
+ => "Dana" 
+ruby-1.8.7-p302 > user["first_name"]
+ => "Dana" 
+ruby-1.8.7-p302 > user
+ => {"first_name\n"=>"Dana", "last_name"=>"Tassler", "first_name"=>"Dana"} 
+ruby-1.8.7-p302 > user = { "first_name" => "Dana", "last_name" => "Tassler" }
+ => {"last_name"=>"Tassler", "first_name"=>"Dana"} 
+ruby-1.8.7-p302 > "name".split('')
+ => ["n", "a", "m", "e"] 
+ruby-1.8.7-p302 > :name.split('')
+NoMethodError: private method `split' called for :name:Symbol
+	from (irb):135
+	from :0
+ruby-1.8.7-p302 > "foobar".reverse
+ => "raboof" 
+ruby-1.8.7-p302 > :foobar.reverse
+NoMethodError: undefined method `reverse' for :foobar:Symbol
+	from (irb):137
+	from :0
+ruby-1.8.7-p302 > user = { :name => "DAna Ta[K[K[K[K[K[Kana TAssl[K[K[K[Kassler", e[K:email => "dana.tassler@gmail.com" }
+ => {:name=>"Dana Tassler", :email=>"dana.tassler@gmail.com"} 
+ruby-1.8.7-p302 > user[:name]
+ => "Dana Tassler" 
+ruby-1.8.7-p302 > user:[K{:[K[K{:[K[K[:passowr[K[Kw[Ko[K[Kword]
+ => nil 
+ruby-1.8.7-p302 > params = {}
+ => {} 
+ruby-1.8.7-p302 > params["u[K[K:user] = { :name => "Dana Tassler", :email -[K=> "dana.tassler@gmail.com" }
+ => {:name=>"Dana Tassler", :email=>"dana.tassler@gmail.com"} 
+ruby-1.8.7-p302 > params[:user][:email]
+ => "dana.tassler@gmail.com" 
+ruby-1.8.7-p302 > [Kruby-1.8.7-p302 > [Kruby-1.8.7-p302 > [Kruby-1.8.7-p302 > [Kruby-1.8.7-p302 > flash = { :success => "It worked!", :error => "It failed. :-(" }
+ => {:success=>"It worked!", :error=>"It failed. :-("} 
+ruby-1.8.7-p302 > flash.each do |key, value|
+ruby-1.8.7-p302 >     puts "Key #{key.inspect} has value #{value.inspect}"
+ruby-1.8.7-p302 ?>  end
+Key :success has value "It worked!"
+Key :error has value "It failed. :-("
+ => {:success=>"It worked!", :error=>"It failed. :-("} 
+ruby-1.8.7-p302 > puts (1..5).to_a
+1
+2
+3
+4
+5
+ => nil 
+ruby-1.8.7-p302 > puts (1..5).to_a.inspect
+[1, 2, 3, 4, 5]
+ => nil 
+ruby-1.8.7-p302 > puts :name, :name.inspect
+name
+:name
+ => nil 
+ruby-1.8.7-p302 > puts "It worked!", "It worked!".inspect
+It worked!
+"It worked!"
+ => nil 
+ruby-1.8.7-p302 > :[Kp :name
+:name
+ => nil 
+ruby-1.8.7-p302 > s = "foobar"
+ => "foobar" 
+ruby-1.8.7-p302 > s.class
+ => String 
+ruby-1.8.7-p302 > s = String.new("foobar")
+ => "foobar" 
+ruby-1.8.7-p302 > s.class
+ => String 
+ruby-1.8.7-p302 > s == "foobar"
+ => true 
+ruby-1.8.7-p302 > a = Array.new([1, 3, 2])
+ => [1, 3, 2] 
+ruby-1.8.7-p302 > h = Hash.new
+ => {} 
+ruby-1.8.7-p302 > h[:foo]
+ => nil 
+ruby-1.8.7-p302 > h = Hash.new(0)
+ => {} 
+ruby-1.8.7-p302 > h[:foo]
+ => 0 
+ruby-1.8.7-p302 > s = String.new("foobar")
+ => "foobar" 
+ruby-1.8.7-p302 > s.class
+ => String 
+ruby-1.8.7-p302 > s.class.c[Ksuperclass
+ => Object 
+ruby-1.8.7-p302 > s.class.superclass.superclass
+ => nil 
+ruby-1.8.7-p302 > # Using ruby 1.9[K8.7 for this...so no worky
+ruby-1.8.7-p302 >   end
+SyntaxError: compile error
+(irb):168: syntax error, unexpected kEND
+	from (irb):168
+	from :0
+ruby-1.8.7-p302 > class Word
+ruby-1.8.7-p302 ?>  def palindrom?(string[K[K[K[K[K[K[K[Ke?(string)
+ruby-1.8.7-p302 ?>    string == string.reverse
+ruby-1.8.7-p302 ?>    end
+ruby-1.8.7-p302 ?>  end
+ => nil 
+ruby-1.8.7-p302 > w = Word.new
+ => #<Word:0xb7279f90> 
+ruby-1.8.7-p302 > w.papl[K[Klindrome?("foobar")
+ => false 
+ruby-1.8.7-p302 > wo.[K[K.palindrome?drom[K[K[K[K[K[K[K[K[K[K[K[K[Klindrome?("level")
+ => true 
+ruby-1.8.7-p302 > class Word < String
+ruby-1.8.7-p302 ?>  def palindrome?
+ruby-1.8.7-p302 ?>    self = self.reverse
+ruby-1.8.7-p302 ?>    end
+ruby-1.8.7-p302 ?>  end
+SyntaxError: compile error
+(irb):179: Can't change the value of self
+self = self.reverse
+      ^
+	from (irb):181
+	from :0
+ruby-1.8.7-p302 > exit[K[K[K[Kexit
+]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ exit
+exit
+
+Script done on Sun 20 Feb 2011 04:45:22 PM CST

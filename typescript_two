@@ -1,0 +1,56 @@
+Script started on Sun 20 Feb 2011 04:59:46 PM CST
+]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ class Word < String
+bash: String: No such file or directory
+]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ irb
+ruby-1.8.7-p302 > class Word < st[K[KString
+ruby-1.8.7-p302 ?>  def palindrome?
+ruby-1.8.7-p302 ?>    self == self.reverse
+ruby-1.8.7-p302 ?>    end
+ruby-1.8.7-p302 ?>  end
+ => nil 
+ruby-1.8.7-p302 > s = Word.new ([K[K("level{)[K[K")
+ => "level" 
+ruby-1.8.7-p302 > s.palindrome?
+ => true 
+ruby-1.8.7-p302 > s.length
+ => 5 
+ruby-1.8.7-p302 > sd[K.class
+ => Word 
+ruby-1.8.7-p302 > s.class.superclass
+ => String 
+ruby-1.8.7-p302 > s.[K[Ks.class.superclass.superclass
+ => Object 
+ruby-1.8.7-p302 > "level".palindrome?
+NoMethodError: undefined method `palindrome?' for "level":String
+	from (irb):12
+	from :0
+ruby-1.8.7-p302 > class String
+ruby-1.8.7-p302 ?>  def palindrome?
+ruby-1.8.7-p302 ?>    self == sele[Kf.reverse
+ruby-1.8.7-p302 ?>    end
+ruby-1.8.7-p302 ?>  end
+ => nil 
+ruby-1.8.7-p302 > "deified".palindrome?"
+ruby-1.8.7-p302"> end
+ruby-1.8.7-p302"> ;[K"
+ArgumentError: wrong number of arguments (1 for 0)
+	from (irb):18:in `palindrome?'
+	from (irb):18
+	from :0
+ruby-1.8.7-p302 > "end"deified".palindrome?"[K
+ => true 
+ruby-1.8.7-p302 > controller = PagesController.new
+NameError: uninitialized constant PagesController
+	from (irb):22
+	from :0
+ruby-1.8.7-p302 > controller.Ho[K[Khome
+NoMethodError: undefined method `home' for nil:NilClass
+	from (irb):23
+	from :0
+ruby-1.8.7-p302 > require './example_user'
+ => true 
+ruby-1.8.7-p302 > exit
+]0;student@matc4321: ~/rails_projects/sample_appstudent@matc4321:~/rails_projects/sample_app$ exit
+exit
+
+Script done on Sun 20 Feb 2011 05:04:01 PM CST
