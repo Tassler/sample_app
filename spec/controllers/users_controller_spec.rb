@@ -94,6 +94,11 @@ describe UsersController do
     end
 
     describe "success" do
+			
+			it "should sign the user in" do
+        post :create, :user => @attr
+        controller.should be_signed_in
+      end
 
       before(:each) do
         @attr = { :name => "New User", :email => "user@example.com",
