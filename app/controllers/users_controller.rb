@@ -3,11 +3,6 @@ class UsersController < ApplicationController
   before_filter :correct_user, :only => [:edit, :update]
   before_filter :admin_user,   :only => :destroy
   
-  #def index
-  #  @title = "All users"
-  #  @users = User.all
-  #end
-  
   def index
     @title = "All users"
     @users = User.paginate(:page => params[:page])
@@ -21,10 +16,16 @@ class UsersController < ApplicationController
   def new
 		@user = User.new
 		@title = "Sign up"
+		if @user.admin = false
+			render 'index'
+    end
   end
 
 	def create
     @user = User.new(params[:user])
+    if @user.admin = false
+			render 'index'
+    end
     if @user.save
       sign_in @user
       flash[:success] = "Welcome to the Sample App!"

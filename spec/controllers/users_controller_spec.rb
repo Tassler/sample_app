@@ -33,7 +33,9 @@ describe UsersController do
 
       it "should destroy the user" do
         lambda do
-          delete :destroy, :id => @user
+          # unless current_user.id == @user.id # Trying to get this to work, not sure how to.  Suspect I'm close.
+						delete :destroy, :id => @user
+					# end
         end.should change(User, :count).by(-1)
       end
 
